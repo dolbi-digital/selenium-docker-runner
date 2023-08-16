@@ -1,5 +1,8 @@
 pipeline{
 	agent any
+	tools {
+              dockerTool 'docker3'
+            }
 	stages{
 		stage("Pull Latest Image"){
 			steps{
