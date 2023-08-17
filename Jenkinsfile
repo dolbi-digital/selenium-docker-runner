@@ -2,7 +2,6 @@ pipeline{
 	agent any
 	tools {
               dockerTool 'docker3'
-              dockerTool 'docker-compose1'
             }
 	stages{
 		stage("Pull Latest Image"){
